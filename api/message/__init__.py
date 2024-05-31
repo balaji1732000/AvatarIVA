@@ -27,9 +27,7 @@ blob_sas_url = os.getenv("BLOB_SAS_URL")
 
 # server_connection_string = f"Driver={{ODBC Driver 17 for SQL Server}};Server=tcp:{sql_db_server},1433;Uid={sql_db_user};Pwd={sql_db_password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
 # database_connection_string = server_connection_string + f"Database={sql_db_name};"
-
-
-server_connection_string = f'DRIVER={{ODBC Driver 18 for SQL Server}};SERVER="LAPTOP-PROFOFK2";Trusted_Connection=yes; TrustServerCertificate=yes;'
+server_connection_string = f"Driver={{ODBC Driver 18 for SQL Server}};Server={sql_db_server},1433;Uid=aiavatar;Pwd={sql_db_password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
 database_connection_string = server_connection_string + f"Database={sql_db_name};"
 # font color adjustments
 blue, end_blue = "\033[36m", "\033[0m"
